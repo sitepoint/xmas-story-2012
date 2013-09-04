@@ -1,0 +1,642 @@
+/* @override 
+	http://xmas/css/north.css */
+
+
+h1 span{
+	display: block;
+	position: absolute;
+	left: 10px;
+	width: 328px;
+	height: 50px;
+	background: url(/img/logo-euph.png) no-repeat 0px 0px}
+
+#sky{
+	background-color: rgb(120,194,194);
+	/*background-image: linear-gradient(bottom, rgb(120,194,194) 100%, rgb(187,240,240) 0%);
+	background-image: -o-linear-gradient(bottom, rgb(120,194,194) 100%, rgb(187,240,240) 0%);
+	background-image: -moz-linear-gradient(bottom, rgb(120,194,194) 100%, rgb(187,240,240) 0%);
+	background-image: -webkit-linear-gradient(bottom, rgb(120,194,194) 100%, rgb(187,240,240) 0%);
+	background-image: -ms-linear-gradient(bottom, rgb(120,194,194) 100%, rgb(187,240,240) 0%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1, rgb(120,194,194)),
+		color-stop(0, rgb(187,240,240))
+	);*/
+}
+
+#ground{
+	background-color: #f5f5f5;
+	background-image: linear-gradient(bottom, rgb(245,245,245) 100%, rgb(218,235,235) 0%);
+	background-image: -o-linear-gradient(bottom, rgb(245,245,245) 100%, rgb(218,235,235) 0%);
+	background-image: -moz-linear-gradient(bottom, rgb(245,245,245) 100%, rgb(218,235,235) 0%);
+	background-image: -webkit-linear-gradient(bottom, rgb(245,245,245) 100%, rgb(218,235,235) 0%);
+	background-image: -ms-linear-gradient(bottom, rgb(245,245,245) 100%, rgb(218,235,235) 0%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1, rgb(245,245,245)),
+		color-stop(0, rgb(218,235,235))
+	);
+}
+
+
+
+#ice-rink{
+	width: 837px;
+	height: 114px;
+	background: url(/img/north/ice-rink.png);
+	
+	position: absolute;
+	bottom: 50px;
+	left: 60px;
+}
+
+
+
+#dog-sled{
+	
+	-webkit-transition: left 5s ease-in-out;
+	-moz-transition: left 5s ease-in-out;
+	-ms-transition: left 5s ease-in-out;
+	-o-transition: left 5s ease-in-out;
+	transition: left 5s ease-in-out;
+
+	width: 618px;
+	height: 145px;
+	background: url(/img/north/sled.png);
+	
+	position: absolute;
+	bottom: 60px;
+	left: 200px;
+}
+
+#express-station{
+	width: 777px;
+	height: 499px;
+	background: url(/img/north/express-station.png);
+	
+	position: absolute;
+	bottom: 75px;
+	z-index: 3;
+}
+
+#train{
+	width: 565px;
+	height: 224px;
+	background: url(/img/north/train.png);
+	
+	position: absolute;
+	bottom: 88px;
+	z-index: 2;
+	
+	-webkit-transition: left 4s ease-in-out;
+	-moz-transition: left 4s ease-in-out;
+	-ms-transition: left 4s ease-in-out;
+	-o-transition: left 4s ease-in-out;
+	transition: left 4s ease-in-out;
+}
+
+#train.train-fixed-to-start-station{
+	left: 210px;
+}
+
+#train-track{
+	height: 27px;
+	background: url(/img/north/train-track.png);
+	
+	position: absolute;
+	bottom: 82px;
+	left: 600px;
+	z-index: 1;
+}
+
+#arrive-station{
+	width: 845px;
+	height: 128px;
+	background: url(/img/north/arrive-station.png);
+	
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	z-index: 3;
+}
+
+#welcome-sign{
+	width: 223px;
+	height: 291px;
+	background: url(/img/north/welcome-sign.png);
+	
+	position: absolute;
+	bottom: 100px;
+	right: 150px;
+}
+
+#fishing-eskimo{
+	width: 179px;
+	height: 160px;
+	background: url(/img/north/eskimo-and-fishing-pole.png);
+	
+	position: absolute;
+	bottom: 100px;
+	left: 300px;
+}
+
+#fishing-hole{
+	width: 174px;
+	height: 28px;
+	background: url(/img/north/fishing-hole.png);
+	
+	position: absolute;
+	bottom: 82px;
+	left: 450px;
+}
+
+#fishing-line{
+	width: 80px;
+	height: 161px;
+	background: url(/img/north/fishing-line.png);
+	
+	position: absolute;
+	bottom: 90px;
+	left: 468px;
+	z-index: 2;
+}
+
+.hole { position: absolute; width: 174px; height: 201.6px; overflow: hidden; }
+
+.hole:before { background: url(/img/north/fishing-hole.png) no-repeat; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -ms-background-size: 100% 100%; background-size: 100% 100%; content: ""; display: block; bottom: -4%; position: absolute; width: 174px; height: 28px; }
+
+.hole:nth-of-type(1) { -webkit-transform: scale(0.7); -moz-transform: scale(0.7); -ms-transform: scale(0.7); -o-transform: scale(0.7); transform: scale(0.7); left: 200%; bottom: 0px; }
+
+.hole:nth-of-type(2) { -webkit-transform: scale(0.3); -moz-transform: scale(0.3); -ms-transform: scale(0.3); -o-transform: scale(0.3); transform: scale(0.3); left: 20%; bottom: 10px; }
+
+.hole:nth-of-type(3) { -webkit-transform: scale(0.5); -moz-transform: scale(0.5); -ms-transform: scale(0.5); -o-transform: scale(0.5); transform: scale(0.5); left: -180%; bottom: 0px; }
+
+.fish { background: url(/img/north/splash-fish.png) no-repeat center left; -webkit-background-size: 140% 200%; -moz-background-size: 140% 200%; -ms-background-size: 140% 200%; background-size: 140% 200%; position: absolute; bottom: -50px; left: 30%; width: 30px; height: 50px; }
+
+
+#walking-eskimo{
+	width: 112px;
+	height: 163px;
+	background: url(/img/north/eskimo-torso.png) no-repeat;
+	
+	position: absolute;
+	bottom: 100px;
+	left: 300px;
+}
+#walking-eskimo .legs{ 
+width: 50px;
+height: 40px;
+
+position: absolute;
+overflow:hidden;
+bottom: 3px;
+left: 45px;
+}
+#walking-eskimo .frontleg, #walking-eskimo .backleg{ 
+width: 32px;
+height: 43px;
+background: url(/img/north/eskimo-front-leg.png?4-4) no-repeat bottom left;
+
+position: absolute;
+left: 0px;
+bottom: 3px;
+}
+#walking-eskimo .backleg{ 
+background: url(/img/north/eskimo-back-leg.png) no-repeat;
+left: 10px;
+bottom: 5px;
+}
+
+
+#fire{
+	width: 56px;
+	height: 71px;
+	background: url(/img/north/logs.png);
+	
+	position: absolute;
+	bottom: 90px;
+	right: 600px;
+}
+
+#eskimo-at-fire{
+	width: 86px;
+	height: 151px;
+	background: url(/img/north/eskimo-at-fire.png);
+	
+	position: absolute;
+	bottom: 100px;
+	right: 500px;
+}
+
+#igloo{
+	width: 385px;
+	height: 258px;
+	background: url(/img/north/igloo.png);
+	
+	position: absolute;
+	bottom: 80px;
+	right: 0;
+}
+
+#polar-bear{
+	width: 114px;
+	height: 316px;
+	background: url(/img/north/bear-torso.png) no-repeat;
+	
+	left: 35%;
+	position: absolute;
+	bottom: 110px;
+}
+#polar-bear .arms{ 
+	width: 110px;
+	height: 75px;
+	
+	position: absolute;
+	background: url(/img/north/bear-arms.png);
+	overflow:hidden;
+	top: 80px;
+	left: 2px;
+	border-radius: 50%;
+	-webkit-mask: url(http://sitepointstatic.com/images/fill.svg) center; */
+
+}
+#polar-bear .arms .hands{ 
+	width: 43px;
+	height:36px;
+	
+	position: absolute;
+	background: url(/img/north/bear-hands.png);
+	overflow:hidden;
+	top: 0px;
+	left: 35px;
+	border-radius: 50%;
+	-webkit-mask: url(http://sitepointstatic.com/images/fill.svg) center; */
+
+}
+
+#polar-bear .legs{ 
+	width: 110px;
+	height: 82px;
+	
+	position: absolute;
+	overflow:hidden;
+	bottom: 8px;
+	left: 5px;
+}
+#polar-bear .legs .leftleg, #polar-bear .legs .rightleg{ 
+	width: 48px;
+	height: 82px;
+	
+	position: absolute;
+	bottom: 0px;
+	left: 60px;
+	background: url(/img/north/bear-rightleg.png);
+}
+#polar-bear .legs .leftleg{ 
+
+	left: 5px;
+	background: url(/img/north/bear-leftleg.png);
+}
+#eskimo-being-chased{
+	width: 88px;
+	height: 160px;
+	background: url(/img/north/eskimo-watcher.png);
+	
+	position: absolute;
+	bottom: 40px;
+	right: 300px;
+}
+
+#cave{
+	width: 439px;
+	height: 160px;
+	background: url(/img/north/cave-base.png);
+	
+	position: absolute;
+	bottom: 90px;
+	right: 200px;
+}
+#cave:after{
+	width: 439px;
+	height: 160px;
+	background: url(/img/north/cave.png);
+	
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.caveback{
+	background:  url(/img/north/multi-bear.png) no-repeat -80px 50px;		
+	
+	position: absolute;
+	bottom: 150px;
+	right: 200px;
+	width: 80px;
+	height: 56px;
+}
+.cavefront{
+	background:  url(/img/north/multi-bear.png) no-repeat 40px -40px;
+	
+	position: absolute;
+	bottom: 20px;
+	right: 220px;
+	width: 80px;
+	height: 56px;
+}
+.caveside{
+	background:  url(/img/north/multi-bear.png) no-repeat -214px -40px;
+	
+	position: absolute;
+	bottom: 30px;
+	right: 34px;
+	width: 80px;
+	height: 56px;
+}
+#hunter{
+	background:  url(/img/north/hunter.png) no-repeat top right ;
+	width: 100px;
+	height: 160px;
+	
+	position: absolute;
+	bottom: 90px;
+	left: 200px;
+}
+#penguins{
+	
+	width: 2000px;
+	height: 164px;
+	position: absolute;
+	bottom: 0px;
+}
+
+#penguins ul:after, #penguins:before{ /* huddle of static penguins */
+	content: "";
+	display: block;
+	position: absolute;
+	top: -5px;
+	background:  url(/img/north/penguin-sprite.png)  432px 0px;
+	left: 42%;
+	width: 702px;
+	height: 82px;
+	z-index:50
+}
+#penguins ul:after{
+	background-position: 0px 0px;
+	top: 0px;
+	left: 46%;
+}
+#penguins ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	top:200px;
+	position:relative;
+}
+
+#slide {
+	width: 1200px;
+	height: 160px;
+	
+	position: absolute;
+	bottom: 90px;
+	left: 200px;
+	
+	
+}
+#slide .climber{
+	width:54px;
+	height:81px;
+	background:  url(/img/north/penguin-sprite.png)  -648px 0px;
+
+	
+	position: absolute;
+	bottom: 140px;left: 180px;
+}
+
+#slide .slide{
+	width: 120%;
+	height: 280px;
+	bottom: 0px;
+
+	position: absolute;
+	overflow:hidden;
+}
+#slide .slide:after{
+	width: 439px;
+	height: 160px;
+	background: url(/img/north/slide.png);
+	
+	content: "";
+	position: absolute;
+	top: 110px;
+	left: 0px;
+
+}
+
+#slide .penguinsliding{
+	position:absolute;
+	background: url(/img/north/penguin-sliding.png) top left;
+	width: 100px;
+	height: 49px;
+	Z-index:40;
+	left:160px;
+	bottom: 160px;
+	opacity: 0
+	}
+
+
+#left-shore{
+	width: 152px;
+	height: 184px;
+	background: url(/img/north/left-shore.png);
+	
+	position: absolute;
+	bottom: 0;
+	left: -30px;
+}
+
+#water{
+	width: 4500px;
+	height: 185px;
+	background-color: #3b719d;
+	
+	position: absolute;
+	bottom: 0;
+	left: 120px;
+}
+
+#seal-mid-air {
+	width: 120%;
+	height: 150px;
+	
+	position: absolute;
+	bottom: 70px;
+	left: -30px;
+}
+
+#seal-mid-air ul li{
+	width: 150px;
+	height: 75px;
+	
+	position: absolute;
+	list-style:none;
+	top: 30px;
+	left: 40%;
+	overflow:hidden;
+	border-radius: 50%;
+	 -webkit-backface-visibility: hidden;
+	}
+#seal-mid-air ul li em{
+	width: 150px;
+	height: 150px;
+	top: 30%;
+	left: 0;
+	border-radius: 50%;
+	background: url(/img/north/leaping-seal.png);
+	position: absolute;
+
+	-webkit-backface-visibility: hidden;
+	
+	}
+
+#seal-mid-air ul li:nth-of-type(2){
+	left: 50%
+	
+}
+#seal-mid-air ul li:nth-of-type(3){
+	left: 70%
+}
+
+#right-shore{
+	width: 218px;
+	height: 175px;
+	background: url(/img/north/right-shore.png);
+	position: absolute;
+	bottom: 0px;
+	left:  100px;
+}
+
+#hide-background-for-water{
+	/*height: 214px;*/
+	width: 4600px;
+	/*background-color: rgb(120,194,194);*/
+	border: 1px solid rgb(120,194,194);
+	border-width: 214px 200px 0 200px;
+	border-color: rgb(120,194,194) transparent transparent transparent;
+	position: absolute;
+	bottom: 175px;
+	left: -225px;
+}
+
+#iceberg{
+	width: 679px;
+	height: 423px;
+	background: url(/img/north/iceberg.png);
+	
+	position: absolute;
+	bottom: 30px;
+	left: 200px;
+}
+
+#waving-seal{
+	width: 119px;
+	height: 56px;
+	background: url(/img/north/waving-seal.png);
+	
+	position: absolute;
+	bottom: 60px;
+	left: 300px;
+	
+}
+
+#seal{
+	position:relative;
+	height:140px;
+	width: 100%;
+	bottom: 40px;
+	position:absolute;
+}
+#seal ul li{
+	width: 150px;
+	height: 48px;
+	left:50%;
+	top:50%;
+	list-style:none;
+	
+	border-radius:50%;	
+	position: absolute;
+
+}
+
+#seal ul li i{
+	display:block;
+	position:absolute;
+	border-radius:50% 50%;
+	width: 79px;
+	left:20%; 
+	top:-20px;
+	height: 48px;
+	background: url(/img/north/seal.png) no-repeat;
+  	-webkit-mask: url(http://sitepointstatic.com/images/fill.svg) center; 
+
+}
+
+
+#explorer-flag{
+	width: 275px;
+	height: 272px;
+	background: url(/img/north/explorer-flag.png);
+	
+	position: absolute;
+	bottom: 50px;
+	left: 400px;
+}
+#explorer-flag .flag{
+	width: 82px;
+	height: 62px;
+	background: url(/img/north/flag.png);
+	
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+#explorer-flag .flag .logo{
+	width: 82px;
+	height: 62px;
+	background: url(/img/north/flaglogo.png);
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#frozen-yeti{
+	width: 263px;
+	height: 263px;
+	background: url(/img/north/frozen-yeti.png);
+	
+	position: absolute;
+	bottom: 60px;
+	left: 400px;
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+#christmas-tree{
+	width: 584px;
+	height: 597px;
+	background: url(/img/north/christmas-tree.png);
+	
+	position: absolute;
+	bottom: 20px;
+	left: 400px;
+}
