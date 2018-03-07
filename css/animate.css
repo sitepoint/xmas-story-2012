@@ -1,5 +1,5 @@
 /* @override 
-	http://xmas/css/animate.css */
+	https://xmas.sitepoint.com/css/animate.css */
 /* DAY #1 -- Boys */
 #hill1, #hill2, #hill3 { position: absolute; bottom: 130px; left: 80%; width: 200px; height: 65px; background: url(/img/north/hill1.png) top left no-repeat; }
 
@@ -88,7 +88,7 @@
   85.71% { left: 82%; bottom: 170px; width: 100px; height: 40px; } }
 
 /* DAY #2 -- Skate */
-#mask { position: absolute; bottom: 50px; left: 0px; overflow: hidden; margin: 0; width: 100%; height: 180px; border-radius: 0 0 38% 38%; -webkit-mask: url(http://sitepointstatic.com/images/fill.svg) center; }
+#mask { position: absolute; bottom: 50px; left: 0px; overflow: hidden; margin: 0; width: 100%; height: 180px; border-radius: 0 0 38% 38%; -webkit-mask: url(https://d2pynh6fsce549.cloudfront.net/images/fill.svg) center; }
 
 #ice-rink { background-color: rgba(187, 240, 240, 0.5); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(120, 194, 194, 0.5)), color-stop(100%, rgba(187, 240, 240, 0.5))); background-image: -webkit-linear-gradient(top, rgba(120, 194, 194, 0.5), rgba(187, 240, 240, 0.5)); background-image: -moz-linear-gradient(top, rgba(120, 194, 194, 0.5), rgba(187, 240, 240, 0.5)); background-image: -ms-linear-gradient(top, rgba(120, 194, 194, 0.5), rgba(187, 240, 240, 0.5)); background-image: -o-linear-gradient(top, rgba(120, 194, 194, 0.5), rgba(187, 240, 240, 0.5)); background-image: linear-gradient(top, rgba(120, 194, 194, 0.5), rgba(187, 240, 240, 0.5)); position: relative; top: 50%; height: 95px; border-radius: 50%; -webkit-box-shadow: inset 0px 3px 14px rgba(20, 40, 100, 0.2); box-shadow: inset 0px 3px 14px rgba(20, 40, 100, 0.2); }
 

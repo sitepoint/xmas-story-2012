@@ -1,5 +1,5 @@
 /* @override 
-	http://xmas/css/north.css */
+	https://xmas.sitepoint.com/css/north.css */
 
 
 h1 span{
@@ -263,7 +263,7 @@ bottom: 5px;
 	top: 80px;
 	left: 2px;
 	border-radius: 50%;
-	-webkit-mask: url(http://sitepointstatic.com/images/fill.svg) center; */
+	-webkit-mask: url(https://d2pynh6fsce549.cloudfront.net/images/fill.svg) center; */
 
 }
 #polar-bear .arms .hands{ 
@@ -276,7 +276,7 @@ bottom: 5px;
 	top: 0px;
 	left: 35px;
 	border-radius: 50%;
-	-webkit-mask: url(http://sitepointstatic.com/images/fill.svg) center; */
+	-webkit-mask: url(https://d2pynh6fsce549.cloudfront.net/images/fill.svg) center; */
 
 }
 
@@ -584,7 +584,7 @@ bottom: 5px;
 	top:-20px;
 	height: 48px;
 	background: url(/img/north/seal.png) no-repeat;
-  	-webkit-mask: url(http://sitepointstatic.com/images/fill.svg) center; 
+	-webkit-mask: url(https://d2pynh6fsce549.cloudfront.net/images/fill.svg) center;
 
 }
 
