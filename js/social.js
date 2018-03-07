@@ -12,7 +12,7 @@ s.twitter.set_element_to_post_to_twitter_on_click(my_twitter_element, my_twitter
 
 References:
 	Twitter:
-		https://dev.twitter.com/docs/intents#tweet-intent
+		https://web.archive.org/web/20140522195941/https://dev.twitter.com/docs/intents
 
 	Facebook:
 		https://developers.facebook.com/docs/guides/web/
@@ -87,7 +87,7 @@ Facebook = function() {
 
 	this.set_element_to_post_to_feed_on_click_sharer_php = function(element, post_params) {
 		// Uses sharer.php with extra parameters.
-		// see http://www.therykers.net/?p=37
+		// see https://web.archive.org/web/20140212224448/http://www.therykers.net/?p=37
 		var possible_params = ["url", "images", "title", "summary"];
 		if(element) {
 			var url = "http://www.facebook.com/sharer.php?s=100";
@@ -555,7 +555,7 @@ function parameterise( a ) {
 };
 
 function bind( elem, evt, cb ) {
-	// from http://www.creativemeat.com/development/2012-01-10-oneupweb-cross-browser-event-binding-without-jquery/
+	// from https://web.archive.org/web/20121016001923/http://www.creativemeat.com/development/2012-01-10-oneupweb-cross-browser-event-binding-without-jquery/
 	if ( elem.addEventListener ) {
 		elem.addEventListener(evt,cb,false);
 	}
