@@ -12,7 +12,7 @@ s.twitter.set_element_to_post_to_twitter_on_click(my_twitter_element, my_twitter
 
 References:
 	Twitter:
-		https://dev.twitter.com/docs/intents#tweet-intent
+		https://web.archive.org/web/20140522195941/https://dev.twitter.com/docs/intents
 
 	Facebook:
 		https://developers.facebook.com/docs/guides/web/
@@ -76,7 +76,7 @@ Facebook = function() {
 			// TODO warn if no metadata found
 			// TODO warn if not an element, eg jquery object
 			var u = encodeURIComponent(window.location.href);
-			var url = 'http://www.facebook.com/sharer.php?u='+u;
+			var url = 'https://www.facebook.com/sharer.php?u='+u;
 			var anchor = wrap_element_in_anchor(element, url);
 			anchor.setAttribute("target", "_blank");
 		}
@@ -87,10 +87,10 @@ Facebook = function() {
 
 	this.set_element_to_post_to_feed_on_click_sharer_php = function(element, post_params) {
 		// Uses sharer.php with extra parameters.
-		// see http://www.therykers.net/?p=37
+		// see https://web.archive.org/web/20140212224448/http://www.therykers.net/?p=37
 		var possible_params = ["url", "images", "title", "summary"];
 		if(element) {
-			var url = "http://www.facebook.com/sharer.php?s=100";
+			var url = "https://www.facebook.com/sharer.php?s=100";
 			for (var i=0; i<possible_params.length; i++) {
 				var possible_param_key = possible_params[i];
 				if (possible_param_key in post_params) {
@@ -297,7 +297,7 @@ Facebook = function() {
 	};
 
 	function init_facebook() {
-		// This mumbo-jumbo is adapted from 
+		// This mumbo-jumbo is adapted from
 		// https://developers.facebook.com/docs/guides/web/
 		facebook.FB_is_initialised = typeof(FB) != "undefined";
 		if (!(facebook.FB_is_initialised)) {
@@ -370,7 +370,7 @@ Facebook = function() {
 
 		var background = get_spammy_dialog_background();
 		var dialog = get_spammy_dialog();
-			
+
 		var dialog_p = document.createElement("p");
 		dialog_p.id = spammy.dialog_text_id;
 		dialog_p.innerHTML = dialog_text;
@@ -411,7 +411,7 @@ Facebook = function() {
 	function display_spammy_status(msg, color) {
 		var background = get_spammy_dialog_background();
 		var dialog = get_spammy_dialog();
-			
+
 		var dialog_p = document.createElement("p");
 		dialog_p.id = spammy.dialog_text_id;
 		dialog_p.innerHTML = msg;
@@ -555,7 +555,7 @@ function parameterise( a ) {
 };
 
 function bind( elem, evt, cb ) {
-	// from http://www.creativemeat.com/development/2012-01-10-oneupweb-cross-browser-event-binding-without-jquery/
+	// from https://web.archive.org/web/20121016001923/http://www.creativemeat.com/development/2012-01-10-oneupweb-cross-browser-event-binding-without-jquery/
 	if ( elem.addEventListener ) {
 		elem.addEventListener(evt,cb,false);
 	}

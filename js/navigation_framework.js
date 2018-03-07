@@ -378,13 +378,13 @@ function init_page() {
 	};
 
 	function switch_on_fancybox(){
-	
+
 		$('.fancybox').fancybox({
 			beforeShow: set_body_to_scroll_normally,
 			afterShow: set_melbourne_clock,
 			afterClose: set_body_to_scroll_horizontally
 		});
-	
+
 	};
 
 	function set_melbourne_clock() {
@@ -397,24 +397,24 @@ function init_page() {
 		$(".clock .m").text(new Date().getUTCMinutes().rightPad("0", 2));
 		$(".clock .d").text(is_pm ? "pm" : "am");
 	};
-	
+
 	function subscribe_to_newsletter(){
-	
+
 		$('#sub-loading').hide();
 		$('#subscribe-to-email').click(function(){
 		//console.log('click?');
 			$('#subscribe-to-deals .original-text span').fadeOut(300);
-			
+
 			$('#sub-loading').delay(300).fadeIn();
-			
+
 			var email = $('#subscribe-to-deals input[type=text]').val();
-			
+
 			var success_text = '<p class="success">Thanks for subscribing! You\'ll now get daily emails until the sale is over. You can opt-out any time though.</p>';
-			
+
 			var valid = Utils.validateEmail(email);
-			
+
 			if(valid){
-				
+
 				$.ajax({
                     type: 'post',
 					url: "/subscribe-to-list",
@@ -432,14 +432,14 @@ function init_page() {
                         }
                     }
                 });
-				
+
 			} else {
 				$('#sub-loading').delay(400).fadeOut();
 				$('#subscribe-to-deals .error').show().delay(3000).fadeOut();
 			}
-		
+
 		});
-	
+
 	};
 
 	function set_heading() {
@@ -463,51 +463,51 @@ function init_page() {
 	function hide_podling_button() {
 		$(".podlings").css("display", "none");
 	}
-	
+
 	function sendSupportEmail(){
-		
+
 		$('#support-message-button').live("click",function(e){
-		
+
 			e.preventDefault();
-			
+
 			var $form = $('#support-message');
 			var email = $form.find('#support-email').val();
 			var valid = Utils.validateEmail(email);
-			
+
 			//console.log('valid email gotten: ' + valid);
-			
+
 			if(valid){
 				var data = {
 					email: email,
 					subject: $('#support-subject').val(),
 					message: $('#support-message-text').val()
 				};
-				
+
 				$.ajax({
 					type: 'post',
 					url: '/support-email',
 					data: data,
 					success: function(data){
-						
+
 						$('#support-message').slideUp(300, function(){
-						
+
 							$('#support-success').slideDown();
-						
+
 						});
-						
+
 						$('.fancybox-inner').delay(500).animate({scrollTop: 1000}, 300);
-						
+
 					}
 				});
-			
+
 			} else {
-			
+
 				$('#support-email').addClass('error');
-			
+
 			}
-		
+
 		});
-	
+
 	};
 
 };
@@ -594,10 +594,3 @@ function Preload_Screen_Remover() {
 };
 
 var preload_screen_remover = new Preload_Screen_Remover();
-
-
-
-
-
-
-
