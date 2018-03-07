@@ -76,7 +76,7 @@ Facebook = function() {
 			// TODO warn if no metadata found
 			// TODO warn if not an element, eg jquery object
 			var u = encodeURIComponent(window.location.href);
-			var url = 'http://www.facebook.com/sharer.php?u='+u;
+			var url = 'https://www.facebook.com/sharer.php?u='+u;
 			var anchor = wrap_element_in_anchor(element, url);
 			anchor.setAttribute("target", "_blank");
 		}
@@ -90,7 +90,7 @@ Facebook = function() {
 		// see https://web.archive.org/web/20140212224448/http://www.therykers.net/?p=37
 		var possible_params = ["url", "images", "title", "summary"];
 		if(element) {
-			var url = "http://www.facebook.com/sharer.php?s=100";
+			var url = "https://www.facebook.com/sharer.php?s=100";
 			for (var i=0; i<possible_params.length; i++) {
 				var possible_param_key = possible_params[i];
 				if (possible_param_key in post_params) {
