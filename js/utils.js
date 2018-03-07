@@ -10,7 +10,7 @@ var Utils = {
 		document.cookie = name+"="+value+expires+"; path=/";
 		//console.log("Wrote '" + name + " : " +  value + "' to cookie ")
 	},
-	
+
 	readCookie: function(name) {
 		//console.log("Reading cookie value for " + name);
 		var nameEQ = name + "=";
@@ -22,17 +22,17 @@ var Utils = {
 		}
 		return null;
 	},
-	
+
 	eraseCookie: function(name) {
 		createCookie(name,"",-1);
 	},
-	
+
 	elExists: function(el){
 		if($(el).length > 0) return true; else return false;},
-	
+
 	validateEmail: function(email){
 		var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		
+
 		return re.test(email);
 	}
 

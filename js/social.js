@@ -297,7 +297,7 @@ Facebook = function() {
 	};
 
 	function init_facebook() {
-		// This mumbo-jumbo is adapted from 
+		// This mumbo-jumbo is adapted from
 		// https://developers.facebook.com/docs/guides/web/
 		facebook.FB_is_initialised = typeof(FB) != "undefined";
 		if (!(facebook.FB_is_initialised)) {
@@ -370,7 +370,7 @@ Facebook = function() {
 
 		var background = get_spammy_dialog_background();
 		var dialog = get_spammy_dialog();
-			
+
 		var dialog_p = document.createElement("p");
 		dialog_p.id = spammy.dialog_text_id;
 		dialog_p.innerHTML = dialog_text;
@@ -411,7 +411,7 @@ Facebook = function() {
 	function display_spammy_status(msg, color) {
 		var background = get_spammy_dialog_background();
 		var dialog = get_spammy_dialog();
-			
+
 		var dialog_p = document.createElement("p");
 		dialog_p.id = spammy.dialog_text_id;
 		dialog_p.innerHTML = msg;

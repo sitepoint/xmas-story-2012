@@ -12,13 +12,13 @@ var Callbacks = {
 	cssPrefixes: ["", "-moz-", "-ms-", "-o-", "-webkit-"],
 
 	dogsled: function(dogsled){
-		
+
 		Callbacks.calcDogsledEndPos();
 		$window.bind({
 			'resize': Callbacks.calcDogsledEndPos,
 			'scroll': Callbacks.dogSledMoving
 		});
-		
+
 		Callbacks.setDogSledMovementDelay();
 		Callbacks.addAnimationSettingListenerForDogsled();
 	},
@@ -45,27 +45,27 @@ var Callbacks = {
 			$el.css(prefix + cssProperty, cssValue);
 		}
 	},
-	
+
 	dogSledMoving: function () {
-		
+
 		var sled = $('.dogsled-fixed-to-screen');
-		
+
 		if(sled.length > 0){
-		
+
 			var sledStartOffset = $('#day-4 .inner').offset().left;
 			var dayW = $('#day-4 .inner').width();
 			var windowW = $(window).width();
 			var side = (windowW - dayW) / 2;
 			var scrollL = $window.scrollLeft();
-			
+
 			var sledLeft = scrollL - sledStartOffset + side + 100;
-			
+
 			var style = '<style type="text/css" id="sled-fixed-to-screen-style">#dog-sled.dogsled-fixed-to-screen{left: '+sledLeft+'px!important;}</style>';
-			
+
 			$('#sled-fixed-to-screen-style').remove();
-			
+
 			$('head').append(style);
-			
+
 			// Make the dog legs move while they catch up to the scroll
 			if (config.get("do_animations")) {
 				$('#dog-sled').addClass('dogs-legs-moving');
@@ -74,35 +74,35 @@ var Callbacks = {
 				this.dogsledLegsMovingTimeout = setTimeout(function() { $('#dog-sled').removeClass('dogs-legs-moving'); }, sled_animation_delay);
 			}
 		}
-	
+
 	},
-	
+
 	calcDogsledEndPos: function(){
-	
+
 		if(Utils.elExists('#day-6')){
-		
+
 			var sledStartOffset = $('#day-4 .inner').offset().left;
 			var sledEndOffset = $('#day-6 .inner').offset().left;
 			var sledEndPos = sledEndOffset - sledStartOffset + 100;
 			var style = '<style type="text/css" id="sled-fixed-to-end-postition-style">#dog-sled.dogsled-fixed-to-end{left: '+sledEndPos+'px!important;}</style>';
-			
+
 			$('#sled-fixed-to-end-postition-style').remove();
-			
+
 			$('head').append(style);
-			
+
 		}
-		
+
 	},
-	
+
 	trainCb: function(){
-		
+
 		Callbacks.calcTrainStuff();
 		$window.bind({
 			'resize': Callbacks.calcTrainStuff,
-			
+
 		});
 		$window.scroll(Callbacks.trainMoving);
-		
+
 		Callbacks.setTrainMovementDelay();
 		Callbacks.addAnimationSettingListenerForTrain();
 		Callbacks.startSmokeListener();
@@ -132,30 +132,30 @@ var Callbacks = {
 	calcTrainStuff: function(tracks){
 		var maxDays = stories.maximum_day;
 		var times = 3;
-		
+
 		var windowWidth = $(window).width();
 		var innerWidth = $('#day-1 .inner').width();
 		var margin = (windowWidth-innerWidth);
-		
+
 		var trackWidth = windowWidth*times;
 		$('#train-track').width(trackWidth);
-		
+
 		if(Utils.elExists('#arrive-station')){
-		
+
 			var start_station_left = $('#express-station').offset().left;
 			var end_station_left = $('#arrive-station').offset().left;
-			
+
 			var train_end_offset = end_station_left - start_station_left + 50;
-			
+
 			var style = '<style type="text/css" id="train-fixed-to-end-station-style">#train.train-fixed-to-end-station{left: '+train_end_offset+'px!important;}</style>';
-			
+
 			$('#train-fixed-to-end-station-style').remove();
-			
+
 			$('head').append(style);
-			
-		
+
+
 		}
-		
+
 	},
 
 	startSmokeListener: function() {
@@ -199,85 +199,85 @@ var Callbacks = {
 			}
 		}, 50);
 	},
-	
+
 	trainMoving: function () {
-		
+
 		var train = $('.train-fixed-to-screen');
-		
+
 		if(train.length > 0){
-		
+
 			var tStartOffset = $('#day-7 .inner').offset().left;
 			var dayW = $('#day-7 .inner').width();
 			var windowW = $(window).width();
 			var side = (windowW - dayW) / 2;
 			var scrollL = $window.scrollLeft();
-			
+
 			var tLeft = scrollL - tStartOffset + side + 200;
-			
+
 			var style = '<style type="text/css" id="train-fixed-to-screen-style">#train.train-fixed-to-screen{left: '+tLeft+'px!important;}</style>';
-			
+
 			$('#train-fixed-to-screen-style').remove();
-			
+
 			$('head').append(style);
-			
+
 			// Make the crank arm move while the train catches up to the scroll
 			$('#train').addClass('crankarm-moving');
 			clearTimeout(this.crankarmMovingTimeout);
 			var train_animation_delay = 4000; // ms
-			this.crankarmMovingTimeout = setTimeout(function() { $('#train').removeClass('crankarm-moving'); }, train_animation_delay);	
+			this.crankarmMovingTimeout = setTimeout(function() { $('#train').removeClass('crankarm-moving'); }, train_animation_delay);
 		}
 	},
-	
+
 	water: function(){
-	
+
 		Callbacks.calcWaterWidth();
 		$window.bind({
 			'resize': Callbacks.calcWaterWidth,
-			
+
 		});
-	
+
 	},
-	
+
 	calcWaterWidth: function(water){
-		
+
 		var windowWidth = $(window).width();
 		var waterWidth = windowWidth*3;
-			
+
 		$('#water').width(waterWidth);
 		$('#hide-background-for-water').width(waterWidth + 400);
-		
+
 	},
-	
+
 	slideLength: function(){
-	
+
 		Callbacks.calcSlideLength();
 		$window.bind({
 			'resize': Callbacks.calcSlideLength,
-			
+
 		});
-	
+
 	},
-	
+
 	calcSlideLength: function(){
-	
+
 		if(Utils.elExists('#water')){
-		
+
 			var slideLeft = $('#slide .slide').offset().left;
 			var waterLeft = $('#water').offset().left;
 			var slideLength = waterLeft - slideLeft;
-			
+
 			var style = '<style type="text/css" id="slide-length-style">#slide{width: '+slideLength+'px!important;}</style>';
-			
+
 			$('#slide-length-style').remove();
-			
+
 			$('head').append(style);
-			
-		
+
+
 		}
-	
+
 	}
-	
-	
+
+
 
 
 }

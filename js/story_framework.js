@@ -39,7 +39,7 @@ var Story_Collection = Self_Fetching_Collection.extend({
 		var collection = this;
 		this.day_divs = [];
 
-		
+
 		// TODO line below depends on sale_periods, it's a bit messy
 		this.total_days_to_display = _.max([sale_periods.total_days_to_display, this.maximum_day]);
 		//console.log(this.total_days_to_display + " " + sale_periods.total_days_to_display + " " + this.maximum_day);
@@ -164,7 +164,7 @@ var stories = new Story_Collection();
 function rule_evaluator(rule, $el) {
 	var is_currently_active = false;
 	var parsed_rule = parse_rule();
-	
+
 	function parse_rule() {
 		var parsed_rule = {
 			triggers: [],

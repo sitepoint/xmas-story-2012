@@ -50,7 +50,7 @@ var Sale_Period_Collection = Self_Fetching_Collection.extend({
 			preload_screen_remover.try_to_remove_preload_screen();
 			view.preload_all_covers_other_than_today();
 		});
-		
+
 		var todays_model = this.get_current_sale_day_model();
 		var covers = this.get_days_covers(todays_model);
 		for (var i=0; i<covers.length; i++) {
@@ -399,7 +399,7 @@ var Base_Sale_View = Backbone.View.extend({
 		var view = this;
 		this.new_price_parent.off("click");
 		this.new_price_parent.css("cursor", "pointer");
-		this.new_price_parent.click(function() { 
+		this.new_price_parent.click(function() {
 			view.checkout_form[0].submit();
 		});
 	},
@@ -1020,7 +1020,7 @@ var Less_Detail_View_Pickchoose_Open = Less_Detail_View_Base.extend({
 			less_detail_image.append(blank_book_cover_view.el);
 			this.book_cover_views.push(blank_book_cover_view);
 		}
-		
+
 		var images = less_detail_image.find(".book-cover-container");
 		this.set_less_detail_image_layout(images);
 
