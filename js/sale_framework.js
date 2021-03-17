@@ -863,7 +863,7 @@ var Bundle_Deal_View = Base_Sale_View.extend({
 			this.hamper_line.html(freebie_html);
 		}
 		else {
-			this.hamper_line.html("With every purchase, you get a <strong>FREE</strong> <a class='fancybox fancybox.ajax' href='/pages/hamper.php'>Bonus Coupon Hamper</a>!")
+			this.hamper_line.html("With every purchase, you get a <strong>FREE</strong> Bonus Coupon Hamper!")
 		}
 	},
 	render_checkout: function() {
